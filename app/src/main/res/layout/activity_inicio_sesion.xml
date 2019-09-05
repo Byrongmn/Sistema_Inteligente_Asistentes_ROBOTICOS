@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context="tesis.cuentacuentos.bluetooth.Inicio_Sesion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@android:color/holo_blue_light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+
+            <TextView
+                android:id="@+id/status4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="Estado" />
+            <TextView
+                android:id="@+id/status3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="Estado"
+                android:layout_below="@+id/status4"/>
+
+
+            <EditText
+                android:id="@+id/usuariotxt"
+                android:layout_width="301dp"
+                android:layout_height="43dp"
+                android:layout_below="@+id/status3"
+                android:layout_marginTop="20dp"
+                android:background="@layout/rounded_border_edittext"
+                android:ems="10"
+                android:hint="Nombre de jugador..."
+                android:inputType="text|textEmailAddress"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="75dp"/>
+
+            <Button
+                android:id="@+id/iniciarbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar"
+                tools:layout_editor_absoluteX="280dp"
+                tools:layout_editor_absoluteY="75dp"
+                android:layout_below="@+id/usuariotxt"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_green"/>
+
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_bluet3"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"/>
+
+
+            <Button
+                android:id="@+id/btnAddUser3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/usuariotxt"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/anadir_usuariobtn"
+                android:gravity="left|bottom"
+                android:text="Nuevo Jugador" />
+
+            <!--  <Button
+                  android:id="@+id/btnGetUsersList3"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_below="@+id/iniciarbtn"
+                  android:layout_marginTop="13dp"
+                  android:background="@drawable/listar_usuariobtn"
+                  android:text="Listar Jugadores"
+                  android:layout_alignParentRight="true"/>
+
+
+              <TextView
+                  android:id="@+id/Lista3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/btnGetUsersList3"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginTop="10dp"
+                  android:paddingRight="5dp"
+                  android:text=""
+                  android:textAlignment="center" />-->
+
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/animation_view3"
+                  android:layout_width="250dp"
+                  android:layout_height="250dp"
+                  android:layout_below="@+id/usuariotxt"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="20dp" />
+
+             <!--  <ListView
+                  android:id="@+id/listView3"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_below="@+id/Lista3"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginTop="10dp"
+                  android:background="@android:color/transparent"
+                  android:divider="@android:color/transparent"
+                  android:backgroundTint="@android:color/transparent"
+                  android:dividerHeight="15dp"
+                  android:paddingRight="4dp"
+                  android:scrollbars="vertical">
+
+              </ListView> -->
+
+
+          </RelativeLayout>
+      </ScrollView>
+  </LinearLayout>

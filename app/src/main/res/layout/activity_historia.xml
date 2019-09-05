@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tesis.cuentacuentos.Activity.HistoriaActividad">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/historia_bg">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/HistoriaFotoID"
+                android:layout_width="320dp"
+                android:layout_height="370dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/HistoriaFotoID"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/happybtn"
+                android:text="Mira mi Historia"
+                android:gravity="center|bottom"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tiempobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDel"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center" />
+
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_below="@id/tiempobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_play_pause"
+                android:layout_below="@id/seekbar"
+                android:src="@drawable/ic_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+

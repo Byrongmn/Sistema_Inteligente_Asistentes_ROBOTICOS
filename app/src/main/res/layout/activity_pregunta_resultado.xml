@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/resultadobg"
+    tools:context="tesis.cuentacuentos.Activity.Historia_Actividad_Resultado">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textResultado_Fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fecha"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textResultado_Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_below="@id/textResultado_Fecha"/>
+
+
+        <TextView
+            android:id="@+id/corectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Contestaste Correctamete:"
+            android:textSize="20dp"
+            android:layout_below="@id/textResultado_Titulo"/>
+
+
+        <TextView
+            android:id="@+id/textResultado_Correctas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:layout_below="@id/corectas"/>
+
+        <TextView
+            android:id="@+id/incorectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Contestate Incorrectamente:"
+            android:textSize="20dp"
+            android:layout_below="@id/textResultado_Correctas"/>
+        />
+
+
+        <TextView
+            android:id="@+id/textResultado_Incorrectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:layout_below="@id/incorectas"/>
+        />
+
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_button_green"
+            android:text="Escoger nueva Historia"
+            android:textColor="#ffffff"
+            android:layout_below="@id/textResultado_Incorrectas"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

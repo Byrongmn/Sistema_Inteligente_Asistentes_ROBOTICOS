@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/preguntabg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtPreguntaCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtPreguntaTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/txtPreguntaUNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/BottonOpcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="250dp"
+                android:textColor="#ffffff"
+                android:background = "@drawable/round_button_green"
+                />
+
+            <Button
+                android:id="@+id/BottonOpcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="350dp"
+                android:textColor="#ffffff"
+                android:background = "@drawable/round_button_green"
+                />
+
+            <Button
+                android:id="@+id/BottonOpcion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="450dp"
+                android:textColor="#ffffff"
+                android:background = "@drawable/round_button_green"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

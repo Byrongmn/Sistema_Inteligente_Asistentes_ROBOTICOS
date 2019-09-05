@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:background="@drawable/gradient_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tesis.cuentacuentos.Activity.UsuarioActividad">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@android:color/holo_blue_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_user"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/txtUId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtUId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/txtUUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Nombre del Jugador:"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtUUsername"
+            android:layout_marginTop="20dp"
+            android:background="@layout/rounded_border_edittext"/>
+
+        <TextView
+            android:id="@+id/txtTutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUsername"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="Elige tu Tutor:"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame"
+            android:layout_below="@+id/txtTutor"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_tutor"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dialog" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/guardarbtn"
+            android:text="GUARDAR"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/frame"
+            android:layout_marginTop="70dp"/>
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Delete User"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/btnSave"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

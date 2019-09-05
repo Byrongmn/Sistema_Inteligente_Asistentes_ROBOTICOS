@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:paddingLeft="5dp"
+    android:paddingRight="3dp"
+    android:paddingBottom="5dp"
+    tools:context="tesis.cuentacuentos.bluetooth.Button">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@android:color/holo_blue_light">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_bluet"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Estado"/>
+
+            <Button
+                android:id="@+id/salirbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIR"
+                tools:layout_editor_absoluteX="257dp"
+                tools:layout_editor_absoluteY="148dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background = "@drawable/round_button_green"/>
+
+            <Button
+                android:id="@+id/btnGetHistoriaList1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/salirbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/historiasbtn"
+                android:text="Historias" />
+
+            <TextView
+                android:id="@+id/Lista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGetHistoriaList1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:paddingRight="5dp"
+                android:text="--------"
+                android:textAlignment="center" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@+id/Lista"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Lista"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:dividerHeight="15dp"
+                android:paddingRight="4dp"
+                android:scrollbars="vertical">
+
+            </ListView>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
